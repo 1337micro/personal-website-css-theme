@@ -13,8 +13,15 @@ i {
                         "Nav Second Second"
                         "Nav Third Third"
                         "Nav Fourth Fourth";
-  grid-template-rows: 100em 100em 100em 100em;
+  grid-template-rows: 40em 40em 40em 40em;
   grid-template-columns: 8em;
+}
+#site > #First h1, h1, #site > #First h2, #site > #First h3 {
+  text-align: center;
+  font-family:  "Lucida Calligraphy", "Lucida Sans Unicode", "Palatino"
+  color: white;
+  position: relative;
+  top: 9%;
 }
 
 aside {
@@ -27,18 +34,21 @@ aside > a {
   display: block;
 }
 
+#social_media > div {
+  display: inline;
+}
 
 #site > #First{
     grid-area: First;
+    background-image: url('../img/background1.jpg');
+    background-repeat: no-repeat;
     overflow: hidden;
     background-size:100%;
     width: 100%;
-    background-repeat: no-repeat;
+
 }
 #site > #Second{
     grid-area: Second;
-    background-color: gray;
-    opacity: 0.5;
     overflow: hidden;
 }
 #site > #Third{

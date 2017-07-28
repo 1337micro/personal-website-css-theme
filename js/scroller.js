@@ -4,12 +4,6 @@ console.log("scroller loadedss")
 
 
 
-
-
-
-
-
-
 document.getElementById("home").onclick = () => {
   $("#First").velocity("scroll", {
     duration: 500,
