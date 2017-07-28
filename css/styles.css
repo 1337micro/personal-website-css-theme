@@ -1,0 +1,86 @@
+body {
+  /*background-image: url('../img/background.jpg'); */
+  background-color: black;
+  color: white;
+}
+i {
+  padding: 0.5em;
+}
+#site {
+  display: grid;
+  width: 100%;
+  grid-template-areas:  "Nav First First"
+                        "Nav Second Second"
+                        "Nav Third Third"
+                        "Nav Fourth Fourth";
+  grid-template-rows: 100em 100em 100em 100em;
+  grid-template-columns: 8em;
+}
+
+aside {
+  position: fixed;
+  z-index: 1;
+  border-right: thin solid white;
+  border-color: white;
+}
+aside > a {
+  display: block;
+}
+
+
+#site > #First{
+    grid-area: First;
+    overflow: hidden;
+    background-size:100%;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+#site > #Second{
+    grid-area: Second;
+    background-color: gray;
+    opacity: 0.5;
+    overflow: hidden;
+}
+#site > #Third{
+
+    grid-area: Third;
+    overflow: hidden;
+}
+#site  > #Fourth{
+    grid-area: Fourth;
+    overflow: hidden;
+}
+
+#portrait {
+  width: 10em;
+  opacity: 0.5;
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+}
+
+#social_media {
+  position: absolute;
+  height: 40%;
+  width: 40%;
+  right: 0;
+  top: 2em;
+  z-index:1;
+
+}
+.contact_info {
+  border: 1px solid white;
+  color: white;
+  text-decoration: none;
+  padding: 1em;
+  margin: 1em;
+
+
+}
+
+.parallax-images {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+}
